@@ -20,22 +20,10 @@ export class AsyncAwaitComponent implements OnInit {
   }
 
   getAllDrunkmansWithAsyncAwait() {
-    this.service.getFirstDrunkmanAsPromise()
-      .then(res => {
-        this.drunkmanOne = res;
-      });
-    this.service.getSecondDrunkmanAsPromise()
-      .then(res => {
-        this.drunkmanTwo = res;
-      });
-    this.service.getThirdDrunkmanAsPromise()
-      .then(res => {
-        this.drunkmanThree = res;
-      });
-    this.service.getFourthDrunkmanAsPromise()
-      .then(res => {
-        this.drunkmanFour = res;
-      });
+    this.service.getFirstDrunkmanAsPromise();
+    this.service.getSecondDrunkmanAsPromise();
+    this.service.getThirdDrunkmanAsPromise();
+    this.service.getFourthDrunkmanAsPromise();
 
     this.go();
   }
@@ -45,22 +33,10 @@ export class AsyncAwaitComponent implements OnInit {
       this.snackBar.open('ON NE PART PAS SANS LES POTES...SALE LACHE !!', '', { duration: 5000});
       console.error('ON NE PART PAS SANS LES POTES...SALE LACHE !!');
     } else {
-      this.service.goFirstDrunkmanAsPromise()
-        .then(res => {
-          this.drunkmanOne = res;
-        });
-      this.service.goSecondDrunkmanAsPromise()
-        .then(res => {
-          this.drunkmanTwo = res;
-        });
-      this.service.goThirdDrunkmanAsPromise()
-        .then(res => {
-          this.drunkmanThree = res;
-        });
-      this.service.goFourthDrunkmanAsPromise()
-        .then(res => {
-          this.drunkmanFour = res;
-        });
+      this.service.goFirstDrunkmanAsPromise();
+      this.service.goSecondDrunkmanAsPromise();
+      this.service.goThirdDrunkmanAsPromise();
+      this.service.goFourthDrunkmanAsPromise();
     }
   }
 }
