@@ -1,0 +1,64 @@
+<div class="action" fxLayout="row" fxLayoutAlign="space-around center">
+  <button mat-raised-button color="primary" (click)="getAllDrunkmansWithAsyncAwait()">GET ALL DRUNKMANS AND GO HOME
+    !</button>
+</div>
+
+<div *ngIf="drunkmanOne" fxLayout="row" [fxLayoutAlign]="drunkmanOne.atHome">
+  <mat-card class="drunkman-card">
+    <mat-card-header>
+      <mat-card-title>{{drunkmanOne.firstName}}</mat-card-title>
+      <mat-card-subtitle>{{drunkmanOne.lastName}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="drunkmanOne.avatar">
+    <mat-card-content>
+      <p>
+        <mat-icon>show_chart</mat-icon>{{drunkmanOne.speed}} speed
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div *ngIf="drunkmanTwo" fxLayout="row" [fxLayoutAlign]="drunkmanTwo.atHome">
+  <mat-card class="drunkman-card">
+    <mat-card-header>
+      <mat-card-title>{{drunkmanTwo.firstName}}</mat-card-title>
+      <mat-card-subtitle>{{drunkmanTwo.lastName}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="drunkmanTwo.avatar">
+    <mat-card-content>
+      <p>
+        <mat-icon>show_chart</mat-icon>{{drunkmanTwo.speed}} speed
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div *ngIf="drunkmanThree" fxLayout="row" [fxLayoutAlign]="drunkmanThree.atHome">
+  <mat-card class="drunkman-card">
+    <mat-card-header>
+      <mat-card-title>{{drunkmanThree.firstName}}</mat-card-title>
+      <mat-card-subtitle>{{drunkmanThree.lastName}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="drunkmanThree.avatar">
+    <mat-card-content>
+      <p>
+        <mat-icon>show_chart</mat-icon>{{drunkmanThree.speed}} speed
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div *ngIf="drunkmanFour" fxLayout="row" [fxLayoutAlign]="drunkmanFour.atHome">
+  <mat-card class="drunkman-card">
+    <mat-card-header>
+      <mat-card-title>{{drunkmanFour.firstName}}</mat-card-title>
+      <mat-card-subtitle>{{drunkmanFour.lastName}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="drunkmanFour.avatar">
+    <mat-card-content>
+      <p>
+        <mat-icon>show_chart</mat-icon>{{drunkmanFour.speed}} speed
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
